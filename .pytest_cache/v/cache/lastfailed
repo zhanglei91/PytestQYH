@@ -1,0 +1,4 @@
+{
+  "test_case/test_DOperationLog.py::TestConsolelogin::()::test_conlogin[case3]": true,
+  "test_case/test_Ordermanage.py::TestOrderman::()::test_personadd[case]": true
+}
