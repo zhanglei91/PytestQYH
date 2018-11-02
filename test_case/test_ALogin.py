@@ -41,20 +41,6 @@ class Testlogin:
         assert home_page == "会议预订"
 
 
-    def test_loginout(self, browser):
-        """
-        退出
-        :return:
-        """
-        pages = PersonaldataPage(browser)
-        # 复用个人资料中定位到的“用户名”元素
-        pages.username_bnt.click()
-        print("点击用户名")
-        page.loginout_bnt.click()
-        page.wait(2)
-        print("点击退出登录")
-
-
     if __name__ == '__main__':
         pytest.main(["-v", "-s", "test_ALogin.py::Testlogin"])
 
