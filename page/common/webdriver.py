@@ -362,3 +362,10 @@ class WebDriver(object):
 
     def sleep(self, sec):
         time.sleep(sec)
+
+    def driver_refresh(self):
+        """
+        刷新当前页面
+        :return:
+        """
+        self.driver.refresh()
