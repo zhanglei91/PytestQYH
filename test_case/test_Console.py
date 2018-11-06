@@ -29,7 +29,7 @@ class TestConsolelogin:
         page.console_table.click()
         print("点击控制台")
         page.console_password.send_keys(password)
-        print("数密码")
+        print("输入密码")
         page.console_login_btn.click()
         print("点击登录")
         console_page = page.console_assert.text
