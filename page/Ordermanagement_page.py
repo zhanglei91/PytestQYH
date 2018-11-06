@@ -5,6 +5,8 @@ from.common import PageElement, PageObject
 class Orderman(PageObject):
     # 订单管理按钮
     order_logo = PageElement(xpath="//span[contains(text(),'订单管理')]")
+    # 会议室总数量
+    total_room = PageElement(xpath="//a[@class='roomTotal']")
     # 免费用户升级专业版
     upgrade_but = PageElement(xpath="//button[contains(text(),'升级专业版')]")
     # 付费用户增容
