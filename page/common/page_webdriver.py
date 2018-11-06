@@ -80,7 +80,7 @@ class WebDriver(object):
         self.driver.close()
 
 
-    def close_nowwindow(self):
+    def close_now_window(self):
         """
         关闭新开窗口
         从标签页A打开新的标签页B，关闭标签页B
@@ -113,3 +113,12 @@ class WebDriver(object):
         # else:
             # js = "var q=document.decumentElement.scorllTop=10000"
         self.driver.execute_script(js)
+
+    def refresh_window(self):
+        """
+        刷新页面
+        :return:
+        """
+        self.driver.refresh()
+
+
